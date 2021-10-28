@@ -1,0 +1,34 @@
+Algoritmo Ejercicio1
+	Definir num1,cont, c,a, d Como Entero;
+	Definir sueld Como Real;
+	
+	num1= 0;
+	sueld= 0;
+	cont=0;
+	c= 0;
+	d= 0;
+	Escribir "¿Cuantos empleados me vas a decir?";
+	Leer cont ;
+	
+	Repetir
+		Escribir "Sueldo del empleado " ;  
+		cont= cont-1;
+		leer sueld; 
+		Si (200>sueld ) Entonces
+			a=a+1;
+		FinSi
+		
+		
+		Si (200<=sueld y sueld<500) Entonces
+			 c=c+1;
+		FinSi
+		
+			
+			Si sueld>=500 Entonces
+				d= d+1;
+			FinSi
+			
+			
+		Hasta Que (cont ==0)
+		Escribir "El numero de empleados con un sueldo menor a 200 es " a " Entre 200 y 500 es " c " Mas de 500 es " d;
+FinAlgoritmo

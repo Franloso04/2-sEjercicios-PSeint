@@ -1,0 +1,37 @@
+Algoritmo Ejercicio2
+	Definir IVA, imp, dev1,devol,devolu, impo, impor, importeRestante Como Real;
+	IVA=0.21;
+	
+	Escribir "Cuanto es el importe de compra ";
+	Leer imp;
+	
+	impo= (imp*IVA);
+	Escribir "Estas pagando el siguiente IVA " impo;
+	impor=impo+imp;
+	importeRestante=impor;
+    Escribir "El precio total del producto es " impor;
+	
+	
+	Repetir
+		Escribir "Con cuanto vas a pagar ";
+		Leer dev1;
+		importeRestante = importeRestante - dev1;
+		
+		Si importeRestante <= 0 Entonces
+			
+			
+			Escribir "Te devolvere " abs(importeRestante);
+		SiNo
+			
+			
+				Escribir "Que me pagues o te mato chaval, te queda por pagar" importeRestante;
+				
+			
+		
+		Fin Si
+		
+	Hasta Que importeRestante <= 0 
+
+
+	
+FinAlgoritmo
